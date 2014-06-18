@@ -119,18 +119,13 @@
 
     <!-- SERVICES -->
     <div class="container">
-
-
-    <section id="services">
-      <!-- <article>
-        <h2>Services</h2>
-      </article> -->
-      <div class="row">
-        <div class="section-title">
-          <h2>Services</h2>
+      <section id="services">
+        <div class="row">
+          <div class="section-title">
+            <h2>Services</h2>
+          </div>
         </div>
-      </div>
-      <!-- <div class="container"> -->
+        
         <div class="row clearfix">
           <div class="col-md-9 column">
             <p class="service-intro">
@@ -143,9 +138,7 @@
             </div>
           </div>
         </div>
-      <!-- </div> -->
-  
-      <!-- <div class="container"> -->
+      
         <div class="row clearfix">
           <div class="col-md-6 column">
             <h3>
@@ -198,19 +191,21 @@
             </ul>
           </div>
         </div>
-     <!--  </div> -->      
-  
-    </section>
+      </section>
     </div>
 
     <!-- PARALLAX 1 -->
     <section style="background-position: 50% 250px;" class="in-between_pic parallax-1" data-type="background" data-speed="5"></section>
-    <section id="gallery">
-      <article>
-        <h2>Gallery</h2>
 
-      </article>
-      <div class="container">
+    <!-- GALLERY -->
+    <div class="container">
+      <section id="gallery">
+        <div class="row">
+          <div class="section-title">
+            <h2>Gallery</h2>
+          </div>
+        </div>
+
         <div class="row clearfix">
           <div class="col-md-12 column">
             <div class="row">
@@ -259,8 +254,8 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- PARALLAX 2 -->
     <section style="background-position: 50% 250px;" class="in-between_pic parallax-2" data-type="background" data-speed="10"></section>
@@ -269,44 +264,54 @@
     <section style="background-position: 50% 250px;" class="in-between_pic parallax-3" data-type="background" data-speed="15"></section>
 
     <!-- CONTACTS -->
-    <section id="contacts">
+    <div class="container">
+      <section id="contacts">
 
-      <article>
-        <h2>Contacts</h2>
-
-      </article>
-
-      <div class="container">
-        <div class="row clearfix">
-          <div class="col-md-6 column">
-            <div class="content">
-              <address>
-                <blockquote>
-                  <p>
-                    H.Somad Rd. No 9A Kav 1200, Balubur Raya, Jakarta 41121
-                  </p>
-                </blockquote>
-                <blockquote>
-                  <p>
-                    Phone : (021) 4121212
-                  </p>
-                </blockquote>
-              </address>
-            </div>
-          </div>
-          <div class="col-md-6 column">
-            <div id="googleMap" style="width:500px;height:380px;"></div>
+        <div class="row">
+          <div class="section-title">
+            <h2>Contacts</h2>
           </div>
         </div>
-      </div>
-    </section>
+
+        <!-- <div class="container"> -->
+          <div class="row clearfix">
+            <div class="col-md-6 column">
+              <div class="content">
+                <address>
+                  <blockquote>
+                    <p>
+                      <span class="glyphicon glyphicon-home"></span> H.Somad Rd. No 9A Kav 1200, Balubur Raya, Jakarta 41121
+                    </p>
+                  </blockquote>
+                  <blockquote>
+                    <p>
+                      <span class="glyphicon glyphicon-phone-alt"></span> (021) 4121212
+                    </p>
+                  </blockquote>
+                  <blockquote>
+                    <p>
+                      <span class="glyphicon glyphicon-envelope"></span> info@sanggar.com
+                    </p>
+                  </blockquote>
+                </address>
+              </div>
+            </div>
+            <div class="col-md-6 column">
+              <div id="googleMap" style="width:500px;height:380px;"></div>
+            </div>
+          </div>
+        <!-- </div> -->
+      </section>
+    </div>
 
     <!-- FOOTER -->
     <footer>
-      <div class="made_by">
-        <p>
-          Nama Company 2014</a>
-        </p>
+      <div class="container">
+        <div class="made_by">
+          <p>
+            Nama Company 2014</a>
+          </p>
+        </div>
       </div>
     </footer>
     <script src="javascript/jquery.js"></script>
@@ -353,6 +358,10 @@
 
 .navbar-default .navbar-brand{
   font-weight: bold;
+}
+
+.navbar-collapse, .collapse, .in{
+  background-color: #007A8F;
 }
 
 .section-title {
