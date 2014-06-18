@@ -1,0 +1,282 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic);
+@font-face {
+    font-family: FuturaBook;
+    src: url(../fonts/4023-webfont.eot);
+    src: url(../fonts/4023-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/4023-webfont.woff) format("woff"), url(../fonts/4023-webfont.ttf) format("truetype"), url(../fonts/4023-webfont.svg#futura_bk_btbook) format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+a {
+  text-decoration: none;
+  border-bottom: 1px solid;
+  outline: none;
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  -ms-transition: color 0.1s linear;
+  -o-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+}
+h2 {
+  text-transform: uppercase;
+  font-size: 200%;
+  letter-spacing: 1px;
+}
+/* ===========
+   Main styles
+   =========== */
+html,
+body {
+  height: 100%;
+  min-width: 800px;
+  width: 100%;
+  font-family: FuturaBook;
+}
+body {
+  min-height: 100%;
+}
+
+.company-name{
+  font-weight:bold;
+  letter-spacing:2px;
+  color:white;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 40px;
+  line-height: 40px;
+  background-color: #007A8F;
+  z-index: 60;
+  font-size: 90%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+nav ul {
+  margin: 0;
+  padding: 0 20px 0 0;
+  text-align: right;
+}
+nav ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-position: outside;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+}
+nav ul li a {
+  letter-spacing: 1px;
+  color: #000000;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 242, 140, 0.3);
+  outline: none !important;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+nav ul li a:hover {
+  color: white;
+}
+nav ul li a:hover {
+  text-decoration: none;
+}
+nav ul li a.nav_active {
+  border-bottom: 0;
+  color: white;
+  cursor: default;
+  pointer-events: none;
+}
+nav ul li + li {
+  margin: 0 0 0 2em;
+}
+
+.container{
+  padding: 0 20px 0 20px;
+}
+      
+#map_canvas {
+  width: 500px;
+  height: 400px;
+}
+
+section {
+  min-height: 100%;
+  width: 100%;
+}
+
+section#welcome {
+  /**zoom: 1;*/
+  padding: 0;
+  min-height: 750px;
+}
+
+section#services {
+  /**zoom: 1;*/
+  padding: 0;
+  min-height: 750px;
+}
+
+section#services article {
+  width: 50%;
+  margin: 50px 0 50px 50px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  float: left;
+}
+
+section#services article h2 {
+  margin: 40px 50px 0px;
+  color: #141b49;
+  line-height: 1;
+}
+
+section#gallery {
+  /**zoom: 1;*/
+  padding: 0;
+  min-height: 750px;
+}
+
+section#gallery article {
+  width: 50%;
+  margin: 50px 0 50px 50px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  float: left;
+}
+
+section#gallery article h2 {
+  margin: 40px 50px 0px;
+  color: #141b49;
+  line-height: 1;
+}
+
+section#contacts {
+  /**zoom: 1;*/
+  padding: 0;
+  min-height: 750px;
+}
+
+section#contacts article {
+  width: 50%;
+  margin: 50px 0 50px 50px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  float: left;
+}
+
+section#contacts article h2 {
+  margin: 40px 50px 0px;
+  color: #141b49;
+  line-height: 1;
+}
+
+section.in-between_pic {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 70%;
+  min-height: 50%;
+  width: 100%;
+}
+section.in-between_pic.parallax-2 {
+  background-image: url("../images/parallax2.jpg");
+  background-color: #141b49;
+}
+section.in-between_pic.parallax-3 {
+  background-image: url("../images/parallax3.jpg");
+}
+section.in-between_pic.parallax-1 {
+  background-image: url("../images/parallax1.jpg");
+}
+
+.carousel-caption{
+  background: rgba(0, 0, 0, 0.5);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+footer {
+  background-color: #007a8f;
+  margin: -40px 0 0;
+  padding: 0;
+  height: 40px;
+}
+footer div.made_by p {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  font-size: 90%;
+}
+footer div.made_by p a {
+  color: #fff28c;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 242, 140, 0.3);
+  outline: none !important;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+footer div.made_by p a:hover {
+  border-bottom: 1px solid;
+}
+
+/* =============
+   Helper mixins
+   ============= */
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.disable-hover {
+  pointer-events: none;
+}
