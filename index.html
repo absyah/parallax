@@ -35,7 +35,38 @@
   </head>
 
   <body>
-    <nav>
+<div class="container">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Nama Sanggar</a>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          
+
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#welcome" class="nav_active">Welcome</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#gallery">Gallery</a>
+            </li>
+            <li>
+              <a href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        
+      </nav>
+    </div>
+  </div>
+</div>    
+    <!-- <nav>
       <div class="container">
         <div class="row clearfix">
           <div class="col-md-6 column">
@@ -59,7 +90,7 @@
           </div>
         </div>
       </div>
-    </nav>
+    </nav> -->
     <section id="welcome">
       <div class="carousel slide" id="carousel-534096">
         <ol class="carousel-indicators">
@@ -302,6 +333,38 @@
     <style>
       .carousel,.item,.active{height:680px;}
       .carousel-inner{height:680px;}
+
+
+
+.navbar-default {
+    background-color:#007A8F;
+    color:#ffffff;
+    border-radius:0;
+}
+
+.navbar-default .navbar-nav > li > a {
+    /*color:#fff;*/
+}
+
+.navbar-default .navbar-nav>li>a {
+  color:black;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color:transparent;
+}
+.navbar-default .navbar-brand {
+    color:#eeeeee;
+}
+
+.navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus{
+  color:whitesmoke;
+  background-color:none;
+}
+
+.navbar-default .navbar-brand{
+  font-weight: bold;
+}
     </style>
 
 </body>

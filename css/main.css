@@ -101,8 +101,8 @@ nav ul li a:hover {
   text-decoration: none;
 }
 nav ul li a.nav_active {
-  border-bottom: 0;
-  color: white;
+  border-bottom: solid 3px black;
+  color: whitesmoke !important ;
   cursor: default;
   pointer-events: none;
 }
